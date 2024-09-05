@@ -17,7 +17,7 @@ always @(posedge clk) begin
   lfsr[4:0] <= rst_n ? { lfsr[3:0], ~(lfsr[4] ^ lfsr[2]) } : 5'd0; 
 end
 
-tt_um_ericsmi_ddr_input_test ericsmi_tt_um_ddr_input_test(
+tt_um_wokwi_407306064811090945 ericsmi_tt_um_ddr_input_test(
     .ui_in({8{lfsr[0]}}),  
     .uo_out(uo_out[7:0]),
     .uio_in(8'd0),
