@@ -24,7 +24,7 @@ module tb ();
   wire [7:0] uio_oe;
 
   // Replace tt_um_example with your module name:
-  ericsmi_tt_um_ddr_input_test user_project (
+  tt_um_ericsmi_ddr_input_test user_project (
 
       // Include power ports for the Gate Level test:
 `ifdef GL_TEST

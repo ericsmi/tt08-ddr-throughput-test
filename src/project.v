@@ -79,7 +79,7 @@ module ddr_input #(parameter N=4) (input rst_n, clk, d, output q);
 
 endmodule
 
-module ericsmi_tt_um_ddr_input_test (
+module tt_um_ericsmi_ddr_input_test (
     input  wire [7:0] ui_in,    // Dedicated inputs
     output wire [7:0] uo_out,   // Dedicated outputs
     input  wire [7:0] uio_in,   // IOs: Input path
