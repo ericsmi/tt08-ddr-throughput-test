@@ -27,7 +27,7 @@ module andgate(input A,B, output Y);
   `ifdef COCOTB_SIM
   assign #1 Y = A&B;
   `else
-  sky130_fd_sc_hd__and2_2 and2(.A(A),.B(B),.Y(Y));
+  sky130_fd_sc_hd__and2_2 and2(.A(A),.B(B),.X(Y));
   `endif
 endmodule
 
@@ -35,7 +35,7 @@ module orgate(input A,B, output Y);
   `ifdef COCOTB_SIM
   assign #1 Y = A|B;
   `else
-  sky130_fd_sc_hd__or2_2 or2(.A(A),.B(B),.Y(Y));
+  sky130_fd_sc_hd__or2_2 or2(.A(A),.B(B),.X(Y));
   `endif
 endmodule
 
