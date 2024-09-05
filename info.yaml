@@ -1,11 +1,11 @@
 # Tiny Tapeout project information
 project:
-  title:        ""      # DDR throughput and flop aperature test 
-  author:       ""      # Eric Smith 
-  discord:      ""      # ericsmith8798 
-  description:  ""      # Grab data on every edge of clock with varying pos pulse width 
-  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+  title:        "DDR throughput and flop aperature test"
+  author:       "Eric Smith"
+  discord:      "ericsmith8798"
+  description:  "Grab data on every edge of clock with varying pos pulse width"
+  language:     "Verilog"
+  clock_hz:     0     
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
