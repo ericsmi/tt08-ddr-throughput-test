@@ -9,12 +9,15 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+Badly probably.
+
+Use a positive edge detector on the clock and its compliment.  Or together those dectors to get 2 positive pulses per period or a 2x clock.  Vary clk 2x pos pulse width by varying number of inv per detect. 
 
 ## How to test
 
-Explain how to use your project
+Carefully.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+Analog Discovery 3
+

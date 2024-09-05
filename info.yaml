@@ -1,9 +1,9 @@
 # Tiny Tapeout project information
 project:
-  title:        ""      # Project title
-  author:       ""      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
+  title:        ""      # DDR throughput and flop aperature test 
+  author:       ""      # Eric Smith 
+  discord:      ""      # ericsmith8798 
+  description:  ""      # Grab data on every edge of clock with varying pos pulse width 
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -11,7 +11,7 @@ project:
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "tt_um_example"
+  top_module:  "ericsmi_tt_um_ddr_input_test"
 
   # List your project's source files here.
   # Source files must be in ./src and you must list each source file separately, one per line.
@@ -22,24 +22,24 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
+  ui[0]: "pulse = 1 inv"
+  ui[1]: "pulse = 3 inv"
+  ui[2]: "pulse = 5 inv"
+  ui[3]: "pulse = 7 inv"
   ui[4]: ""
   ui[5]: ""
   ui[6]: ""
   ui[7]: ""
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[0]: "q for pulse = 1 inv"
+  uo[1]: "q for pulse = 3 inv "
+  uo[2]: "q for pulse = 5 inv"
+  uo[3]: "q for pulse = 7 inv"
+  uo[4]: "q for normal flop"
+  uo[5]: "1"
+  uo[6]: "1"
+  uo[7]: "clk"
 
   # Bidirectional pins
   uio[0]: ""
